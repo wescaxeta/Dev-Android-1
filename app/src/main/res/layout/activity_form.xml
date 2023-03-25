@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/big_padding"
+        android:layout_marginLeft="@dimen/big_padding"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_titulo"
+        android:inputType="textAutoComplete"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/check_assistido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assistido"
+        android:layout_margin="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/big_padding"
+        android:layout_marginLeft="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="Nota:"
+        android:inputType="textAutoComplete"
+        android:textSize="18sp" />
+
+    <NumberPicker
+        android:id="@+id/edit_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_nota"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="@string/button_save"
+        android:layout_margin="@dimen/big_padding"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Filmes p/ assistir</string>
+    <string name="cadastro_filme">Cadastro Filme</string>
+
+    <string name="filmes_label">Filmes</string>
+    <string name="criar_filme_label">Criar Filme</string>
+    <string name="hint_titulo">Título...</string>
+    <string name="hint_nota">Nota...</string>
+    <string name="button_save">Salvar</string>
+    <string name="button_edit">Editar</string>
+    <string name="button_delete">Excluir</string>
+    <string name="empty_not_saved">Titulo não pode ser vazio.</string>
+</resources>

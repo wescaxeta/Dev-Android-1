@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/label_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_titulo"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:text="Nota: " />
+            <TextView
+                android:id="@+id/text_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_titulo"
+                android:layout_toRightOf="@id/label_nota"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/label_assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_nota"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                android:text="Assistido: "
+                />
+            <TextView
+                android:id="@+id/text_assistido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_nota"
+                android:layout_toRightOf="@id/label_assist"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="italic"/>
+
+            <ImageButton
+                android:id="@+id/button_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_assistido"
+                android:layout_toStartOf="@+id/button_delete"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/button_edit"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_toLeftOf="@+id/button_delete" />
+
+            <ImageButton
+                android:id="@id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/text_assistido"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/button_delete"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_delete"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
